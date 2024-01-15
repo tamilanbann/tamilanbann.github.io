@@ -18,7 +18,7 @@ export function WorkExperience() {
     <section className="text-left bg-slate-200" ref={workExperienceRef}>
       <div className="p-2 text-xl font-bold">Work Experience:</div>
       <div
-        className={`pl-4 md:pl-32  duration-1000 transition ${
+        className={`pl-4 md:pl-[175px]  duration-1000 transition ${
           isWorkExperiencVisible ? "  " : " translate-x-full"
         }`}
       >
@@ -49,12 +49,14 @@ export function WorkExperience() {
                 <div>{workExperience.role}</div>
               </div>
               <div className="border-l-2 border-slate-400 group-last:border-l-0 pl-3 md:pl-2  ml-2 ">
-                <div className="flex flex-wrap-reverse md:flex-row items-baseline md:-translate-x-[135px]">
-                  <div className={`order-3 md:order-2  text-sm md:pl-4`}>
+                <div className="flex flex-wrap-reverse md:flex-row items-baseline ">
+                  <div className={`order-3 md:order-2  text-sm md:pl-1 `}>
                     {workExperience.employer}
                   </div>
 
-                  <div className={`order-1 text-xs  `}>
+                  <div
+                    className={` order-1 text-xs  md:absolute md:-translate-x-[190px] `}
+                  >
                     {workExperience.from}-{workExperience.to}{" "}
                   </div>
                   <div className={`order-2 md:order-3 text-xs`}>
