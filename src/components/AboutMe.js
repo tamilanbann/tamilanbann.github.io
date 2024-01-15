@@ -31,8 +31,8 @@ export function AboutMe() {
           className={` p-1 m-2 -z-50 font-serif font-medium text-left capitalize tracking-wide`}
         >
           <span className="font-semibold">Hi there, </span> <br />I am{" "}
-          <span className="font-semibold "> Tamilanban Nakkeeran</span>
-          ,Passionate and results-driven software developer skilled in Java,
+          <span className="font-semibold "> Tamilanban Nakkeeran</span>,
+          Passionate and results-driven software developer skilled in Java,
           Spring Boot, JavaScript, and React.js.
         </p>
       </div>
