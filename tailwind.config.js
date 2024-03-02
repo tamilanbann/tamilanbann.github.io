@@ -6,10 +6,17 @@ module.exports = {
     zIndex: ["responsive", "hover", "focus"],
   },
   theme: {
-    extend: {},
+    extend: {
+      transitionProperty: {
+        height: "height",
+      },
+    },
   },
   plugins: [],
   corePlugins: {
     // zIndex: false,
+  },
+  experimental: {
+    optimizeUniversalDefaults: true,
   },
 };

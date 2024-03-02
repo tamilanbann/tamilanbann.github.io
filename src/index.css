@@ -16,6 +16,15 @@ code {
     scroll-behavior: smooth;
   }
 }
+.no-flickr {
+  backface-visibility: hidden;
+
+  -webkit-backface-visibility: hidden;
+-moz-backface-visibility:    hidden;
+-ms-backface-visibility:     hidden;
+  transform-style: preserve-3;
+  
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -1,21 +1,15 @@
 import { workExperiences } from "./constants/workExperienceConstant";
-import { useRef } from "react";
+
 import { useInView } from "framer-motion";
 
-export function WorkExperience() {
-  const workExperienceRef = useRef();
-  const isWorkExperiencVisible = useInView(workExperienceRef);
-
-  //   const [isWorkExperiencVisible, setIsWorkExperiencVisible] = useState(false);
-  //   useEffect(() => {
-  //     const observer = new IntersectionObserver((entries) => {
-  //       const entry = entries[0];
-  //       setIsWorkExperiencVisible(entry.isIntersecting);
-  //     });
-  //     observer.observe(workExperienceRef.current);
-  //   });
+export function WorkExperience({ componentRef }) {
+  const isWorkExperiencVisible = useInView(componentRef);
   return (
-    <section className="text-left bg-slate-200" ref={workExperienceRef}>
+    <section
+      className="text-left bg-slate-200"
+      id="work-experience"
+      ref={componentRef}
+    >
       <div className="p-2 text-xl font-bold">Work Experience:</div>
       <div
         className={`pl-4 md:pl-[175px]  duration-1000 transition ${
@@ -64,7 +58,7 @@ export function WorkExperience() {
                   </div>
                 </div>
 
-                <ul className=" pl-5 pr-1 space-y-1 text-gray-500 list-disc list-outside dark:text-gray-400 ">
+                <ul className=" pl-5 pr-1 space-y-1 text-gray-700 list-disc list-outside  ">
                   {workExperience.activities.map((activity, index) => (
                     <li key={index}>{activity}</li>
                   ))}

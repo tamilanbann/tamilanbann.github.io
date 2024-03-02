@@ -1,15 +1,13 @@
 import { useInView } from "framer-motion";
 import photo from "./assets/photo.jpeg";
-import { useRef } from "react";
 
-export function AboutMe() {
-  const aboutMeRef = useRef();
-  const isAboutMeVisible = useInView(aboutMeRef);
+export function AboutMe({ componentRef }) {
+  const isAboutMeVisible = useInView(componentRef);
 
   return (
     <section
       className=" md:flex  justify-center items-center p-3 mx-2 "
-      ref={aboutMeRef}
+      ref={componentRef}
     >
       <div className="order-1  md:order-2 md:w-2/5  ">
         <div className="flex justify-center items-center">
