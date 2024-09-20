@@ -37,7 +37,7 @@ export default function Header() {
               <span className="sr-only">Toggle navigation menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side="left" className="md:hidden">
+          <SheetContent side="left" className="md:hidden dark:bg-black">
             <nav className="grid gap-6 text-lg font-medium  dark:bg-black dark:text-white">
               <a
                 href="#"
