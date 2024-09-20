@@ -17,19 +17,13 @@ export default function Header() {
             <span className="sr-only">Acme Inc</span>
           </a>
           <a href="#" className="text-foreground transition-colors ">
-            Dashboard
+            Tamilanban Nakkeeran
           </a>
           <a href="#" className=" transition-colors ">
-            Orders
+            profile
           </a>
           <a href="#" className=" transition-colors ">
-            Products
-          </a>
-          <a href="#" className=" transition-colors ">
-            Customers
-          </a>
-          <a href="#" className=" transition-colors ">
-            Analytics
+            workExperience
           </a>
         </nav>
         <Sheet>
@@ -56,31 +50,19 @@ export default function Header() {
                 href="#"
                 className="text-muted-foreground hover:text-foreground"
               >
-                Dashboard
+                Tamilanban Nakkeeran
               </a>
               <a
                 href="#"
                 className="text-muted-foreground hover:text-foreground"
               >
-                Orders
+                profile
               </a>
               <a
                 href="#"
                 className="text-muted-foreground hover:text-foreground"
               >
-                Products
-              </a>
-              <a
-                href="#"
-                className="text-muted-foreground hover:text-foreground"
-              >
-                Customers
-              </a>
-              <a
-                href="#"
-                className="text-muted-foreground hover:text-foreground"
-              >
-                Analytics
+                workExperience
               </a>
             </nav>
           </SheetContent>
