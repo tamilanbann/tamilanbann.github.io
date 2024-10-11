@@ -7,7 +7,7 @@ export const educations = [
     from: "1-OCT-2024",
     to: "31-SEP-2026",
     title: "Masters of science in  Digital Engineering",
-    organization: "Bauhaus-Universität ",
+    organization: "Bauhaus-Universität",
     city: "Weimar",
     country: "Germany",
   },
@@ -23,8 +23,8 @@ export const educations = [
     from: "",
     to: "",
     title: "Higher Secondary Education",
-    organization: "Maharishi Vidya Mandir ",
-    city: "Hosur ",
+    organization: "Maharishi Vidya Mandir",
+    city: "Hosur",
     country: "India",
   },
 ];
@@ -79,7 +79,7 @@ const Education = React.forwardRef<
                     {education.to}{" "}
                   </div>
                   <div className={`order-2 md:order-3 text-xs`}>
-                    . {education.city + `,` + education.country}
+                    . {education.city + `,` + education.country + `  `}
                   </div>
                 </div>
                 <br></br>
