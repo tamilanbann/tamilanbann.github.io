@@ -42,7 +42,7 @@ const WorkExperience = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
-  <Card ref={ref} className={cn(" ", className)} {...props}>
+  <Card ref={ref} className={cn(" ", className)} {...props} id="workExperience">
     <CardHeader>
       <CardTitle>Work Experience</CardTitle>
     </CardHeader>

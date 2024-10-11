@@ -10,7 +10,7 @@ import { ThemeToggle } from "./theme-toggle";
 const Header = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
->(({ className, ...props }, ref) => (
+>(({ className }, ref) => (
   <div ref={ref} className={cn(" flex  flex-col w-full", className)}>
     <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6 dark:bg-black dark:text-white">
       <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6 ">
@@ -24,11 +24,14 @@ const Header = React.forwardRef<
         <a href="#" className="text-foreground transition-colors ">
           Tamilanban Nakkeeran
         </a>
-        <a href="#" className=" transition-colors ">
-          profile
+        <a href="/#profile" className=" transition-colors ">
+          Profile
         </a>
-        <a href="#" className=" transition-colors ">
-          workExperience
+        <a href="/#workExperience" className=" transition-colors ">
+          Work Experience
+        </a>
+        <a href="/#education" className=" transition-colors ">
+          Education
         </a>
       </nav>
       <Sheet>
@@ -54,11 +57,23 @@ const Header = React.forwardRef<
             <a href="#" className="text-muted-foreground hover:text-foreground">
               Tamilanban Nakkeeran
             </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground">
+            <a
+              href="/#profile"
+              className="text-muted-foreground hover:text-foreground"
+            >
               profile
             </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground">
+            <a
+              href="/#workExperience"
+              className="text-muted-foreground hover:text-foreground"
+            >
               workExperience
+            </a>
+            <a
+              href="/#education"
+              className="text-muted-foreground hover:text-foreground"
+            >
+              Education
             </a>
           </nav>
         </SheetContent>

@@ -7,7 +7,7 @@ export default function GitHub() {
         variant="ghost"
         size="icon"
         className="rotate-0 scale-70 transition-al fill-black dark:fill-white bg-inherit"
-        onClick={() => window.open("_Blank", "https://github.com/tamilanbann")}
+        onClick={() => window.open("https://github.com/tamilanbann", "_Blank")}
       >
         <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <title>GitHub</title>

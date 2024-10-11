@@ -8,7 +8,7 @@ const Profile = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
-  <Card ref={ref} className={cn(" ", className)} {...props}>
+  <Card ref={ref} className={cn(" ", className)} {...props} id="profile">
     <CardContent className="text-left md:flex  justify-center items-center p-3 mx-2 ">
       <div className="order-1  md:order-2 md:w-2/5  ">
         <div className="flex justify-center items-center">
