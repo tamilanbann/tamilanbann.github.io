@@ -34,6 +34,12 @@ const Profile = React.forwardRef<
           APIs,React Frontend, backend microservices, and optimising SQL
           queries, leading the migration of legacy projects.
         </p>
+        <br></br>
+        <p>
+          <span className="font-extrabold">Skils:</span>Spring, Spring Boot ,
+          Java , HTML , Java Persistence API – JPA /, SQL (MSSQL,PL/SQL, MySQL)
+          , Javascript,React.js{" "}
+        </p>
       </div>
 
       <div></div>
